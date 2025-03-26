@@ -635,21 +635,32 @@ document.querySelector("#registerBtn").onclick = function (e) {
 updateRegistrationTable();
 
 // Start toggler coding
-const togglersBtn = document.querySelectorAll(".toggler-btn");
-const sideNav = document.querySelector(".side-nav");
+document.addEventListener("DOMContentLoaded", () => {
+    const togglerBox = document.querySelector(".toggler-box");
+    const openIcon = document.querySelector(".open-icon");
+    const closeIcon = document.querySelector(".close-icon");
+    const sideNav = document.querySelector(".side-nav");
 
-// Add event listener for toggling
-document.addEventListener("click", (e) => {
-    if (e.target === togglersBtn[0]) {
-        sideNav.classList.add("active");
-        togglersBtn[0].classList.add("d-none");
-        togglersBtn[1].classList.remove("d-none");
-    } else if (e.target === togglersBtn[1]) {
-        sideNav.classList.remove("active");
-        togglersBtn[1].classList.add("d-none");
-        togglersBtn[0].classList.remove("d-none");
+    // Check if elements exist
+    if (!togglerBox || !openIcon || !closeIcon || !sideNav) {
+        console.error("One or more elements not found. Check HTML structure.");
+        return;
     }
-})
+
+    // Toggle sidebar function
+    togglerBox.addEventListener("click", () => {
+        const isActive = sideNav.classList.toggle("active");
+
+        if (isActive) {
+            openIcon.classList.add("d-none");
+            closeIcon.classList.remove("d-none");
+        } else {
+            closeIcon.classList.add("d-none");
+            openIcon.classList.remove("d-none");
+        }
+    });
+});
+
 
 // start get result coding from database
 let allResult = [];
