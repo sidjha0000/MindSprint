@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="company.css">
+    <link rel="stylesheet" href="../common/css/animate.min.css">
+    <!-- JS links -->
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <script src="../common/js/sweetalert.min.js"></script>
+    <title>Company</title>
+</head>
+<body>
+    <div class="container bg-white main-box">
+        <!-- Navbar stays outside login/signup forms -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Online Quiz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="navbar-nav w-100 justify-content-end">
+                        <a href="file:///C:/web_dev/QuizApp/homepage/homepage.html" class="nav-link">Home</a>
+                        <a href="file:///C:/web_dev/QuizApp/Portfolio/index.html" class="nav-link">Portfolio</a>
+                        <a href="file:///C:/web_dev/QuizApp/about/about.html" class="nav-link">About Us</a>
+                        <a href="file:///C:/web_dev/QuizApp/Contact/contact.html" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link btn signup-btn">Sign up</a>
+                        <a href="#" class="nav-link d-none btn login-btn">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content section-->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Login Box -->
+                <div class="login-box active">
+                    <form class="login-form">
+                        <label for="brand-code">Brand Code</label>
+                        <input type="text" id="brand-code" class="form-control mb-3">
+                        
+                        <label for="username">Username</label>
+                        <input type="text" id="username" class="form-control mb-3">
+                        
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control mb-3">
+                        
+                        <div align="end">
+                            <a href="#">Student Login Form</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger signin-btn mt-3 mb-3 w-100">Sign In</button>
+                    </form>
+                </div>
+        
+                <!-- Signup Box -->
+                <div class="signup-box">
+                    <form class="signup-form">
+                        <label for="brand-code">Brand Code</label>
+                        <input required type="text" id="brand-code" class="form-control mb-3">
+                        
+                        <label for="brand-name">Brand Name</label>
+                        <input required type="text" id="brand-name" class="form-control mb-3">
+                        
+                        <label for="website">Website</label>
+                        <input required type="text" id="website" class="form-control mb-3">
+                        
+                        <label for="contact">Contact</label>
+                        <input required type="text" id="contact" class="form-control mb-3">
+                        
+                        <label for="address">Address</label>
+                        <textarea id="address" class="form-control mb-3"></textarea>
+                        
+                        <label for="s-username">Username</label>
+                        <input required type="text" id="s-username" class="form-control mb-3">
+                        
+                        <label for="s-password">Password</label>
+                        <input required type="password" id="s-password" class="form-control mb-3">
+                        
+                        <div align="end">
+                            <a href="#">Student Login Form</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger signup-btn mt-3 mb-3 w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img src="../images/login1.jpg" class="w-100" alt="Login Image">
+            </div>
+        </div>
+        
+    <script src="company.js"></script>
+</body>
+</html>

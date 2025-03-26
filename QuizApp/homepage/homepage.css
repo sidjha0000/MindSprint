@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #66BB77 !important;
+}
+.input-group-text{
+    background-color: #05A6FF !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+
+}
+.btn{
+    background-color: #05A6FF !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+}

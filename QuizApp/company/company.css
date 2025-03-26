@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 140vh;
+    background-color: #8ca2f8 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 70%;
+    height: auto;
+    border-radius: 25px;
+    padding: 30px ;
+}
+
+.main-box .navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #284ecaeb;
+}
+
+.main-box .navbar .nav-link{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #284ecaeb;
+}
+
+.main-box .navbar .btn{
+    background-color: #284ecaeb;
+    color: #fff ;
+}
+/* login page & signup page*/
+
+.main-box .login-box ,.main-box .signup-box{
+    width: 80%;
+    padding: 0px 20px;
+}
+
+.main-box .login-box h1{
+    color: #284ecaeb;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.main-box .login-box label,.main-box .signup-box label{
+    color: #284ecaeb;
+    font-family: sans-serif;
+}
+.main-box .login-box input,.main-box .signup-box input
+,.main-box .signup-box textarea{
+    border: none !important;
+    border-bottom: 2px solid #284ecaeb !important;
+    box-shadow: none !important;
+}
+
+.main-box .login-box button,.main-box .signup-box button{
+    background-color: #284ecaeb !important;
+    font-family: sans-serif !important;
+    font-size: 22px !important;
+    box-shadow: none !important;
+    border: none !important;
+
+}
+
+.main-box .login-box {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.main-box .login-box.active {
+    height: auto;
+    opacity: 1;
+}
+
+.main-box .signup-box{
+    opacity: 0;
+    height: 0; 
+    transition: 1s ease-in;  
+    overflow: hidden;
+}
+.main-box .signup-box.active{
+    opacity: 1;
+    height: auto;
+}

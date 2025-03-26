@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(135deg, #1d2b64, #f8cdda); /* Gradient background */
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(90deg, #FF6347, #FFD700, #1E90FF, #32CD32); /* Gradient from red to green */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowing 1.5s ease-in-out infinite alternate;
+}
+
+/* Glowing effect for header */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #1E90FF, 0 0 60px #1E90FF, 0 0 70px #32CD32;
+    }
+    100% {
+        text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FF6347, 0 0 50px #FF6347, 0 0 60px #1E90FF, 0 0 70px #1E90FF;
+    }
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+/* Manual Icon Styling */
+.manual-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.manual-icon + p {
+    margin-bottom: 0;
+}
+
+/* List Item Styling */
+.list-group-item {
+    color: #34495e;
+    font-size: 1.2rem;
+    text-align: justify;
+    background-color: transparent;
+    border-left: 5px solid #e67e22; /* Orange border */
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    color: #e74c3c;
+    transform: translateX(10px);
+}
+
+.list-group-item strong {
+    color: #e67e22;
+}
+
+/* Image Styling */
+img {
+    border-radius: 50%;
+    border: 5px solid #e67e22;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation for Image and Content */
+.wow {
+    visibility: hidden;
+}
+
+.wow.fadeInUp {
+    animation: fadeInUp 1s forwards;
+}
+
+.wow.zoomIn {
+    animation: zoomIn 1s ease-out;
+}
+
+/* Keyframes for smooth animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
